@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes cours de SNT</title>
+		<link rel="stylesheet" href="style.css">
+		<nav>
+          <a href="#" onclick="goBack()">← Retour</a>
+        </nav>
+	</head>
+	<body>
+		<h1>De Scratch à Python</h1>
+		<table>
+		<tr>
+			<h3 style="text-align: left;">1. Passer de Scratch à Python : quels enjeux ?</h3>
+		</tr>
+		<tr>
+			<p class="p2">Au collège, durant le cycle 4, les élèves ont pu découvrir quelques bases de programmation en utilisant l’envi-ronnement Scratch, qui est à la fois un langage de programmation graphique par blocs et un logiciel qui permet son exécution. Développé à des fins pédagogiques par le MIT, et très répandu dans l’enseignement secondaire, il est cepen-dant inutilisable en dehors d’un cadre scolaire pour de réels projets informatiques.</p>
+			<p class="p2">Python est un langage de programmation structuré généraliste avec un très large spectre d’applications possibles. Sa syntaxe épurée ainsi que ses nombreuses bibliothèques spécialisées en font un langage populaire et facile à exploiter. Son utilisation nécessite de disposer d’un IDE (IDE est un acronyme anglais qui signifie « environnement de dévelop-pement intégré ») adapté, comme EduPython.</p>
+		</tr>
+		<tr>
+			<h3 style="text-align: left;">2. PyScripter : l’interface de l’IDE EduPython EduPython</h3>
+			<p class="p2">EduPython est une distribution clé en main et portable pour programmer en Python. Il existe plusieurs versions du langage Python ; EduPython utilise actuellement la version 3.4 de Python. Voici quelques éléments de l’interface PyScripter d’EduPython qui permet d’éditer, d’exécuter, de débogger et de gérer de simples scripts tout comme des modules plus étoffés.</p>
+			<img src=".\images\EcranPyth.png" class="magcenter"> 
+		</tr>
+		<tr>
+			<h3 style="text-align: left;">3. Exemples de syntaxes d’instructions d’affectations</h3>
+			<p class="p2">En informatique, on peut imaginer une variable comme un espace de la mémoire : qui est repéré par une étiquette, avec son nom ; qui peut contenir une « valeur » (un nombre, un mot, une liste de nombres, etc.).Au fur et à mesure de l’exécution d’un algorithme, le contenu d’une variable est susceptible d’être modifié.</p>
+			<h5 style="text-align: left;">a. Affectation d’une valeur à une variable de type numérique (de type entier ou flottant)</h5>
+			<img src=".\images\Calcul1.png" class="magcenter">
+			<p class="p2">On notera que l’éditeur d’EduPython colore les éléments selon leur nature : variables en noir, opérateurs en marron, parenthèses en bleu, valeurs des variables en vert et opérateurs en rouge. </p>
+			<p class="p2">Attention, le signe d’égalité dans Python n’a pas le même sens qu’en mathématiques.En Python, l’instruction x = x + 4 signifie qu’à la valeur contenue dans x, on ajoute 4 puis on stocke le résultat dans la variable x (elle remplace la valeur précédemment contenue dans x qui disparaît).De ce fait, l’instruction x = x + 4 revient à augmenter de 4 le contenu de x.Des affections multiples simultanées sont possibles. Par exemple,x, y = 3, 4 pour affecter simultanément 3 à la variable x et 4 à la variable y.</p>
+			<h5 style="text-align: left;">b. Affectation d’un texte à une variable de type « string » (chaîne de caractères)</h5>
+			<img src=".\images\Affectation.png" class="magcenter">
+			<h5 style="text-align: left;">c. Affectation d’une concaténation de deux variables de type string </h5>
+			<img src=".\images\Affectation2.png" class="magcenter">
+			<p class="p2">On notera la simplicité de la syntaxe de Python, qui utilise le même symbole pour additionner des nombres et concaténer des chaînes de caractères. </p>
+		</tr>
+		<tr>
+			<h3 style="text-align: left;">4. Exemples de syntaxes de structures de contrôles </h3>
+		</tr>
+		<tr>
+			<p class="p2">Le langage Python est un langage de programmation impérative : les opérations effectuées par l’ordinateur corres-pondent à des séquences d’instructions contenues dans le programme exécuté. Les structures de contrôles organisentl’enchaînement de ces instructions. Par défaut, celles-ci sont exécutées les unes après les autres. Il est cependant fréquent de devoir intégrer dans un programme des structures particulières, comme le traitement conditionnel ou le traitement répétitif d’instructions.</p>
+		</tr>
+		<tr>
+			<h5 style="text-align: left;">a. Instruction conditionnelle « si – alors – (sinon) »</h5>
+			<img src=".\images\instruction_si_alors_sinon.png" class="magcenter">
+			<p class="p2">En Python, certains mots sont réservés, comme le « if » ou l’instruction « print » (instruction d’affichage) : l’éditeur les colore en bleu. On note, en outre, le décalage vers la droite de l’instruction « print » par rapport à celle du « if » : cette indentation permet de définir le bloc d’instructions à exécuter si la condition « d<0 » est vérifiée ; elle est alors précédée du symbole « : ».</p>
+			<img src=".\images\instruction_si_alors_sinon2.png" class="magcenter">
+			<p class="p2">Le test d’égalité des valeurs des variables A et B est matérialisé par un double signe d’égalité, et non par le signe d’égalité seul qui sert à l’affectation. Selon les besoins, on peut utiliser une instruction conditionnelle avec ou sans la présence d’un « sinon ».</p>
+			<h5 style="text-align: left;">b. Instruction de boucle bornée </h5>
+			<img src=".\images\boucle1.png" class="magcenter">
+			<img src=".\images\boucle2.png" class="magcenter">
+			<p class="p2">L’expression réservée « in range » permet de définir les bornes du compteur ; on note que la dernière valeur prise par la variable qui sert de compteur est l’entier immédiatement inférieur à la borne supérieure : ici, pour que n vaille de 1 à 5 inclus, on écrit « in range(1 ; 6) ». On peut ne pas donner de borne inférieure, qui est alors par défaut 0. Concernant l’instruction « print » qui ne fait pas partie de la boucle, elle est replacée au niveau d’indentation précédent, ce qui permet à Python de comprendre que le bloc d’instructions de la boucle est terminé.On notera enfin que lorsqu’on souhaite effectuer un affichage, le texte du message est placé entre guillemets tandis que pour afficher la valeur d’une variable, on donne directement le nom de la variable, en le séparant par des virgules.</p>
+			<h5 style="text-align: left;">c. Instruction de boucle non bornée</h5>
+			<img src=".\images\boucle_non_bornée.png" class="magcenter">
+			<p class="p2">L’instruction « input() » permet de récupérer une saisie de l’utilisateur mais, attention, la variable affectée par cette saisie est considérée comme une variable de type string. Ainsi, pour pouvoir récupérer un entier en utilisant un input, il faut le transtyper du type string au type int : c’est le rôle de l’instruction int(). Le caractère # permet de placer un commentaire qui n’est pas interprété/exécuté par l’IDE comme une instruction.L’opérateur // retourne le quotient entier de la division d’un nombre par un autre.</p>
+		</tr>
+		</table>
+		
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes cours de SNT</title>
+		<link rel="stylesheet" href="style.css">
+		<nav>
+          <a href="#" onclick="goBack()">← Retour</a>
+        </nav>
+	</head>
+	<body>
+		<h1>Photographie Numérique</h1>
+		<p class="p2">La photographie numérique connaît une évolution très rapide, aussi bien au niveau technique que culturel.</p>
+		<table class="tabcenter">
+			<tr>
+				<h3 style="text-align: left;">1. Du Capteur à l'Image</h3>
+				<p class="p2">Un capteur photographique est composé d’une trame de <a href=".\lexique.html#VocPhotoNumPhotoSite">photosites<a>, qui produisent de l’électricité lorsqu’ils reçoivent de la lumière. Chacun est placé derrière un filtre pour n’être sensible qu’au rouge, vert ou bleu. La tension électrique produite par chaque <a href=".\lexique.html#VocPhotoNumPhotoSite">photosite<a> est convertie en valeurs numériques et transmise au processeur de l’appareil.</p>
+				<p class="p2">Cet ensemble de valeurs numériques est stocké sous la forme d’un fichier numérique contenant les informations qui constituent l’image :</p>
+				<p class="p2">– les dimensions : la hauteur et la largeur de l’image sont exprimées en nombre de <a href=".\lexique.html#VocPhotoNumPixel">pixels<a>. Une image de 4 000 × 3 000 <a href=".\lexique.html#VocPhotoNumPixel">pixels<a> (px) est constituée de 12 millions de <a href=".\lexique.html#VocPhotoNumPixel">pixels<a> (12 mégapixels). Ce nombre n’est pas nécessairement égal au nombre de photo sites du capteur ;</p>
+				<p class="p2">– la profondeur de couleur : c’est le nombre de bits utilisés pour la couleur d’un <a href=".\lexique.html#VocPhotoNumPixel">pixel<a> dans une image. Une image en niveaux de gris n’utilise que 256 valeurs. Sa profondeur de couleur est de 8 bits. Une photographie numérique en couleurs utilise 256 valeurs (8 bits) par composante primaire (rouge, vert, bleu), ce qui donne 256 × 256 × 256 valeurs différentes, donc 16 777 216 possibilités, soit une profondeur de couleur encodée sur 24 bits ;</p>
+				<p class="p2">– le format : il définit la manière dont les données sont écrites et compressées. Les formats courants en prise de vue numérique sont le jpg (compressé) et le raw (format brut, non compressé). Il existe des formats adaptés au Web (jpg, gif, png), à l’impression (tiff), etc.</p>			
+			<tr>
+				<h3 style="text-align: left;">2. Les Métadonnées</h3>
+				<p class="p2">Une photographie contient des informations complémentaires sous forme de texte : des métadonnées (littéralement, des « données sur des données »). Les métadonnées sont un ensemble structuré d’informations décrivant une ressource quelconque.</p>
+				<p class="p2">Parmi les métadonnées, on trouve la date et l’heure de la prise de vue, les coordonnées GPS, le modèle de l’appareil, la focale et autres paramètres techniques, l’<a href=".\lexique.html#VocPhotoNumOrientation">orientation<a>, etc. D’autres métadonnées peuvent être ajoutées par les logiciels de traitement ou de diffusion d’images : le titre, la légende, le copyright, le logiciel utilisé, des mots-clés, etc.</p>
+				<p class="p2">Les métadonnées permettent une traçabilité technique et même juridique du fichier et peuvent aider son <a href=".\lexique.html#VocPhotoNumIndex">indexation<a>. Il existe des logiciels pour les supprimer afin de réduire le poids d’un fichier ou de ne pas diffuser des informations sensibles. </p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">3. Les Algorithmes</h3>
+				<p class="p2">Au moment de la prise de vue, des algorithmes prennent en charge la <a href=".\lexique.html#VocPhotoNumMisePoint">mise au point<a>, le calcul du temps d’exposition et de l’ouverture du diaphragme. La prise de vue peut être assistée par des indications visuelles sur l’écran de contrôle, par exemple la mise en exergue des zones nettes.</p>
+				<p class="p2">Certains programmes peuvent même ne déclencher la prise de vue que lorsque les conditions semblent optimales, par exemple lorsque la personne photographiée sourit.</p>
+				<p class="p2">Après la prise de vue, diverses opérations sont réalisées par des algorithmes : réglage de la taille de l’image (par exemple, par <a href=".\lexique.html#VocPhotoNumInter">interpolation<a>), filtres pour réduire le <a href=".\lexique.html#VocPhotoNumBruitNum">bruit numérique<a> ou augmenter la netteté apparente, correction des distorsions optiques et, enfin, enregistrement de l’image sur la carte mémoire.</p>
+				<p class="p2">Une autre catégorie d’algorithmes a été développée afin d’effectuer des analyses de reconnaissance faciale. Le principe est de créer une image géométrique du visage en fonction de différents paramètres (taille et forme des éléments du visage, distance entre eux, etc.) afin de le comparer avec les visages géométrisés présents dans une base de données.</p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">4. Le Traitement d'Image</h3>
+				<p class="p2">Les appareils photo numériques peuvent prendre en charge automati-quement l’amélioration d’une prise de vue, mais il existe aussi des logiciels qui permettent d’effectuer des retouches : format ou <a href=".\lexique.html#VocPhotoNumCadrage">cadrage<a>, réglage des couleurs, application de déformations ou de filtres, modification ou suppression d’éléments, montages, etc.</p>
+				<p class="p2">Certains algorithmes permettent de composer une image à partir de plusieurs photographies d’un même sujet, en les superposant pour obtenir un rendu optimal ou en gommant les intersections pour produire une vue panoramique.</p>
+				<p class="p2">Le traitement des images s’est démocratisé avec l’arrivée de logiciels de retouche accessibles et assez simples à utiliser. Il est ainsi devenu difficile de faire confiance aux images et de distinguer une image source d’une image retouchée</p>											
+			</tr>
+		</table>
+		<script src="script.js"></script>
+	</body>
+</html>

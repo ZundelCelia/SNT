@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes cours de SNT</title>
+		<link rel="stylesheet" href="style.css">
+		<nav>
+          <a href="#" onclick="goBack()">← Retour</a>
+        </nav>
+	</head>
+	<body>
+		<h1>Localisation et Cartographie</h1>
+		<p class="p2">Le XXIe siècle a vu l’apparition de nouvelles technologies permettant une meilleure localisation.</p>
+		<table class="tabcenter">
+			<tr>
+				<h3 style="text-align: left;">1. La Géolocalisation</h3>
+				<p class="p2">Comment puis-je savoir où je me trouve ? Pour se localiser dans l’espace lors d’un déplacement, il faut pouvoir se situer. Les technologies qui permettent de se situer automatiquement sont relativement récentes.</p>
+				<p class="p2">La <a href=".\lexique.html#VocLocCartoGéoloc">géolocalisation<a> associe un système global de positionnement (type GPS), un système géodésique mondial (type WGS84) et un système d’information géographique qui permet de visualiser sa position sur une <a href=".\lexique.html#VocLocCartoCarte">carte<a> à partir d’une projection (Géoportail, Google Maps, OpenStreetMap, etc.).</p>
+				<p class="p2">L’association de ces technologies est très récente. Après un usage essentiellement militaire, elle s’est répandue au début du XXIe siècle avec l’accès public au GPS, puis avec la banalisation des smartphones équipés de technologies de <a href=".\lexique.html#VocLocCartoGéoloc">géolocalisation<a> multiples (GPS, antennes cellulaires, Wifi et Bluetooth).</p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">2. Les Coordonnées Géographiques</h3>
+				<p class="p2">Les systèmes de <a href=".\lexique.html#VocLocCartoGéoloc">géolocalisation<a>, tels que le GPS ou Galileo, produisent des données brutes dans des formats standardisés qui permettent de déterminer les coordonnées géographiques.</p>
+				<p class="p2">Le standard NMEA 0183 peut être vu comme un <a href=".\lexique.html#VocLocCartoProto">protocole de transmission<a> des données entre les équipements électroniques de positionnement par satellite. Dans ce standard, toutes les données sont enregistrées sous la forme de caractères ASCII et sont transmises sous forme de trames contenant un certain nombre d’informations, dont les coordonnées géographiques.</p>
+				<img src=".\images\exemple_trame.png" class="magcenter"> 
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">3. Les Cartes Numériques</h3>
+				<p class="p2">Les <a href=".\lexique.html#VocLocCartoCarte">cartes<a> ont été profondément transformées par l’informatique. Elles sont devenues interactives et permettent de changer d’échelle ou de manipuler de très nombreuses informations. </p>
+				<p class="p2">Les différents types de données (agricoles, culturelles, économiques, sociales, etc.) relatives au lieu représenté apparaissent sous forme de couches d’informations superposées au fond cartographique.</p>
+				<p class="p2">Parmi les nombreuses applications proposant des <a href=".\lexique.html#VocLocCartoCarte">cartes<a> numériques, Google Maps est la plus utilisée, Géoportail dispose de très nombreuses infor-mations d’intérêt public et OpenStreetMap est libre d’usage et collaboratif. </p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">4. Les Calculs d'Itinéraires</h3>
+				<p class="p2">Les calculs d’<a href=".\lexique.html#VocLocCartoItineraire">itinéraires<a> sont devenus plus précis, plus fiables et quasiment instantanés grâce à l’association d’un système de <a href=".\lexique.html#VocLocCartoGéoloc">géolocalisation<a>, d’un dispositif de télécommunication et de la cartographie numérique.</p>
+				<p class="p2">Un <a href=".\lexique.html#VocLocCartoItineraire">itinéraire<a> peut se représenter mathématiquement par un graphe. Par exemple, dans le graphe ci-contre, les sommets sont des villes, et les arêtes, la distance (en kilomètres) entre deux villes. </p>
+				<p class="p2">Les applications (Google Maps, OpenStreetMap, Géoportail , etc.) s’appuient sur des algorithmes hérités de la théorie des graphes (comme l’algorithme de Dijkstra) afin de calculer des <a href=".\lexique.html#VocLocCartoItineraire">itinéraires<a> (plus courts, plus rapides, etc.)</p>
+				<img src=".\images\ex_iti.png" class="magcenter"> 							
+			</tr>
+		</table>
+		
+		<script src="script.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes cours de SNT</title>
+		<link rel="stylesheet" href="style.css">
+		<nav>
+          <a href="#" onclick="goBack()">← Retour</a>
+        </nav>
+	</head>
+	<body>
+		<h1>Internet</h1>
+		<p class="p2">Internet permet aux ordinateurs du monde entier de communiquer entre eux. Le traﬁc Internet ne cesse de croître depuis sa mise en place, en 1969. </p>
+		<table class="tabcenter">
+			<tr>
+				<h3 style="text-align: left;">1. Le Trafic Internet et l'Indépendance des Réseaux Physiques</h3>
+				<p class="p2">nternet est le réseau informatique mondial qui permet à de nombreux services de fonctionner, notamment le Web ou encore les réseaux sociaux. Différentes technologies permettent d’accéder à Internet : l’ADSL pour le haut débit, la fibre optique pour le très haut débit (plus de 30 Mbits/s). Sur un téléphone mobile, l’accès peut se faire par la 3G, la 4G pour le très haut débit, et bientôt la 5G. Le Wi-Fi relie un ordinateur à une machine qui possède déjà un accès à Internet. </p>
+				<p class="p2">Au cœur d’Internet, ce sont majoritairement des câbles sous-marins transocéaniques qui font passer les données sur des fibres optiques, à des débits 100 à 1 000 fois plus importants que ceux utilisés dans les maisons.</p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">2. Le Protocole TCP/IP et le Routage</h3>
+				<h5 style="text-align: left;">a. Le protocole IP</h5>
+				<p class="p2">Les données sont transportées sur Internet grâce au protocole <a href=".\lexique.html#VocInternetTCP">TCP<a>/<a href=".\lexique.html#VocInternetIP">IP<a>. Le <a href=".\lexique.html#VocInternetIP">protocole IP (Internet Protocol)<a> découpe les données en <a href=".\lexique.html#VocInternetPaquet">paquets<a>. Chaque <a href=".\lexique.html#VocInternetPaquet">paquet<a> comporte le morceau des données à envoyer et un en-tête indiquant les informations nécessaires à l’acheminement : les adresses des machines terminales émettrices et réceptrices, la taille des données dans le <a href=".\lexique.html#VocInternetPaquet">paquet<a>, un code pour vérifier que le <a href=".\lexique.html#VocInternetPaquet">paquet<a> reçu n’a pas été modifié pendant le transport, le protocole complémentaire utilisé, etc.</p>
+				<p class="p2">Les adresses des machines sont représentées par 4 valeurs entre 0 et 255 chacune quand on utilise la version la plus courante d’<a href=".\lexique.html#VocInternetIP">IP<a> (IPv4) et 64 valeurs avec IPv6.</p>
+				<p class="p2">Les <a href=".\lexique.html#VocInternetPaquet">paquets<a> sont envoyés jusqu’à atteindre la destination. Le temps pour atteindre la destination n’est pas connu à l’avance. Lorsque les <a href=".\lexique.html#VocInternetPaquet">paquets<a> ont passé trop de temps sur Internet ou que leur destination n’est pas joignable, ils sont détruits par la machine qui détecte le dépassement.</p>
+				<h5 style="text-align: left;">b. Le protocole TCP</h5>
+				<p class="p2">Pour s’assurer de la transmission correcte et efficace d’une donnée, on utilise le <a href=".\lexique.html#VocInternetTCP">protocole TCP (Transmission Control Protocol)<a>. Il ajoute un numéro au <a href=".\lexique.html#VocInternetPaquet">paquet<a> ; cela permet de savoir quelle partie de la donnée totale à envoyer est transportée par le <a href=".\lexique.html#VocInternetPaquet">paquet<a>. Le <a href=".\lexique.html#VocInternetTCP">TCP<a> permet aussi un échange bidirectionnel.</p>
+				<h5 style="text-align: left;">c. Le routage</h5>
+				<p class="p2">Les routes (<a href=".\lexique.html#VocInternetRoutage">routage<a>) que suivent les <a href=".\lexique.html#VocInternetPaquet">paquets<a> dans Internet dépendent de l’adresse de destination et de l’état des connexions entre les machines.</p>
+				<p class="p2">Les routeurs sont chargés d’envoyer les <a href=".\lexique.html#VocInternetPaquet">paquets<a> vers leurs destinations. Ceux-ci s’échangent périodiquement les routes qu’ils connaissent pour atteindre les autres machines. Un algorithme choisit la route annoncée comme la meilleure. Par erreur ou par malversation, il peut arriver que les routes soient erronées, rendant ainsi des parties d’Internet inaccessibles à certains utilisateurs.</p>
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">3. Les Adresses Symboliques et les Serveurs DNS</h3>
+				<p class="p2">Pour trouver facilement les machines à utiliser, un registre conserve les associations entre des <a href=".\lexique.html#VocInternetAddSymb">adresses symboliques<a> et des adresses <a href=".\lexique.html#VocInternetIP">IP<a>. C’est ce que l’on appelle le <a href=".\lexique.html#VocInternetDNS">Domain Name System (DNS)<a>, « système des noms de domaine ». Les <a href=".\lexique.html#VocInternetAddSymb">adresses symboliques<a> sont organisées sous la forme d’une suite de labels séparés par des points (par exemple, www.editions-didier.com).</p>
+				<p class="p2">Pour trouver l’adresse <a href=".\lexique.html#VocInternetIP">IP<a> correspondante, une machine contacte un serveur <a href=".\lexique.html#VocInternetDNS">DNS<a>, qui donnera la réponse ou indiquera quel autre serveur peut répondre.</p>
+				<image src=".\images\DNS.png">
+			</tr>
+			<tr>
+				<h3 style="text-align: left;">4. Les Réseaux Pair-à-Pair</h3>
+				<p class="p2">Les réseaux <a href=".\lexique.html#VocInternetPAP">pair-à-pair (peer-to-peer)<a> permettent de partager toutes sortes données (documents, films, jeux, etc.) réparties sur des machines parti-cipant à un même réseau (les pairs). Une machine obtient la liste des adresses <a href=".\lexique.html#VocInternetIP">IP<a> des autres machines qui stockent des fragments de la donnée voulue. Elle télécharge les fragments en parallèle depuis les autres machines. </p>
+				<p class="p2">Les réseaux <a href=".\lexique.html#VocInternetPAP">pair-à-pair<a>, souvent utilisés pour partager des données illégales, sont surveillés par l’organisme Hadopi.</p>
+			</tr>
+		</table>
+		<script src="script.js"></script>
+	</body>
+</html>

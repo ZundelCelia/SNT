@@ -1,0 +1,56 @@
+body {
+	background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+
+h1 {
+	color: blue;
+}
+
+p { 
+	/*color: darkgray;*/
+	front-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img { 
+	text-decoration: none;
+	width: 200px; 
+	border-radius: 10px;
+}
+
+/*
+.sousimg {
+	width: 200px; 
+}	
+*/
+
+:target {
+  animation: highlight 2s ease;
+  background-color: yellow; /* Optionnel, pour un effet visuel plus immédiat */
+}
+
+@keyframes highlight {
+  from { background-color: yellow; }
+  to { background-color: transparent; }
+}
+
+.tabcenter{
+   margin-left:auto;
+   margin-right:auto;
+}	
+
+.magcenter {
+	width: 400px;
+	border-radius: 20px;
+} 
+
+.p2 {
+	color: gray;
+	text-align: justify;
+} 

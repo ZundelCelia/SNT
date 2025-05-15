@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mes cours de SNT</title>
+		<link rel="stylesheet" href="style.css">
+		<nav>
+          <a href="#" onclick="goBack()">← Retour</a>
+        </nav>
+	</head>
+	<body>
+		<h1>Informatique embarquée et Objets connectés</h1>
+		<table class="tabcenter">
+			<tbody>
+				<p class="p2">Les objets connectés, qui envahissent peu à peu notre quotidien, rendent de nombreux services. Il est important qu’ils soient sécurisés et respectueux de la <a href=".\lexique.html#VocInfoObjConViePrivee">vie privée<a>.</p>
+				<tr>
+					<h3 style="text-align: left;">1. Les Systèmes Informatiques Embarquées</h3>
+					<p class="p2">Les <a href=".\lexique.html#VocInfoObjConSysInfoEmb">systèmes informatiques embarqués<a> se rencontrent dans des secteurs aussi variés que l’aéronautique, l’électroménager, le matériel médical, la téléphonie mobile, la robotique industrielle ou encore les jeux vidéo.</p>		
+					<p class="p2">L’architecture des systèmes embarqués est généralement composée de <a href=".\lexique.html#VocInfoObjConMicro">microprocesseurs<a> dont la partie logicielle est partiellement ou entièrement programmée dans le matériel. </p>		
+					<p class="p2">En informatique embarquée, il existe généralement des contraintes à prendre en compte, différentes de celles de l’informatique personnelle, comme :</p>		
+					<p class="p2">la criticité : une sûreté de fonctionnement qui demande aux systèmes dits critiques de fournir des résultats exacts et pertinents ;</p>		
+					<p class="p2">la réactivité : ces systèmes doivent interagir avec leur environnement. Cela implique des impératifs de temps de réponse. De ce fait, l’informatique embarquée est souvent basée sur un <a href=".\lexique.html#VocInfoObjConSysTmpReel">système temps réel<a> ;</p>		
+					<p class="p2">l’autonomie : les systèmes embarqués doivent très souvent remplir leur mission pendant de longues périodes sans intervention humaine ;</p>		
+					<p class="p2">la robustesse, la fiabilité et la sécurité : la sécurité (dans le sens de la résistance aux malveillances) et la fiabilité (continuité de service) sont souvent rattachées à la problématique des systèmes embarqués ;</p>		
+					<p class="p2">des contraintes externes, comme une puissance de calcul définie au plus juste afin de répondre aux besoins tout en évitant les éventuelles surconsommations d’énergie.</p>		
+					<p class="p2">Certains systèmes embarqués – les plus basiques – ne disposent pas d’interface utilisateur. Les plus complexes sont souvent munis de panneaux de contrôles (écran tactile, bouton, etc.). Il en existe par exemple plusieurs types dans les avions.</p>
+				</tr>
+				<tr>
+					<h3 style="text-align: left;">2. Les Objets Connectés</h3>
+					<p class="p2">La vocation première de l’objet connecté n’est pas d’être un périphérique informatique ni une interface d’accès au Web. Il s’agit d’un objet auquel on a ajouté une connexion Internet qui apporte une valeur supplémentaire en termes de fonctionnalité, d’information, d’interaction avec l’environnement ou d’usage.</p>
+					<p class="p2">On estime à plus de 20 milliards le nombre d’objets connectés dans le monde en 2018. Le chiffre devrait atteindre 75 milliards en 2025.</p>
+				</tr>
+				<tr>
+					<h3 style="text-align: left;">3. Le Principe de Fonctionnement</h3>
+					<p class="p2">Le principe des systèmes embarqués est de faire interagir le monde physique avec celui de l’informatique, ou numérique dans le cas de l’iOT. </p>
+					<p class="p2">Le système capte « une grandeur physique » via des capteurs ou des <a href=".\lexique.html#VocInfoObjConIHM">interfaces homme-machine (IHM)<a>, la transforme et la transmet au système informatique. Les traitements informatiques nécessaires sont effectués, et le résultat est retranscrit en actions sur le monde physique, via des actionneurs.</p>
+					<img src=".\images\info_obj.png" class="magcenter">	
+					<p class="p2">Les capteurs recueillent des informations depuis le monde physique et les transmettent au système informatique.</p>
+					<p class="p2">Les actionneurs permettent au système informatique d’agir sur le monde physique en modifiant son état. Par exemple, un capteur de température traduit l’amplitude de la température en une tension électrique. Celle-ci est numérisée, analysée et elle aboutit à une prise de décision. Cette dernière est transmise vers un actionneur pour déclencher le fonctionnement de dispositifs, comme le réglage d’un chauffage.</p>
+					<p class="p2">La mise en réseau de plusieurs objets connectés apporte de nouvelles fonctionnalités de mesure de l’environnement et d’actionnement collectif. L’interaction entre plusieurs objets peut permettre d’exécuter une tâche qu’un objet ne peut réaliser seul. Par exemple, relever des températures dans une forêt en plusieurs points afin de prévenir les départs d’incendie et éviter les cas aberrants.</p>
+				</tr>
+				<tr>
+					<h3 style="text-align: left;">4. Le Sécurité et la Vie Privée</h3>
+					<p class="p2">Les objets connectés sont de plus en plus utilisés au quotidien, ce qui entraîne de nouveaux risques en termes de sécurité et de respect de la <a href=".\lexique.html#VocInfoObjConViePrivee">vie privée<a>. Certains objets peuvent par exemple être utilisés comme robots pour lancer des attaques sur Internet ou pour recueillir les données personnelles d’utilisateurs</p>
+				</tr>
+			</tbody>
+		</table>
+		<script src="script.js"></script>
+	</body>
+</html>
