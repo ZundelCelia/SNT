@@ -18,17 +18,20 @@ a {
   text-decoration: none;
 }
 
+/*
 img { 
 	text-decoration: none;
 	width: 200px; 
 	border-radius: 10px;
 }
-
-/*
-.sousimg {
-	width: 200px; 
-}	
 */
+
+.menuimage {
+    text-decoration: none;
+	width: 200px; 
+	border-radius: 10px;
+ 
+}	
 
 :target {
   animation: highlight 2s ease;
